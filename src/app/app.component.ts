@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project';
+  textInput=''
+  msgFromChild=''
+  receiveChildMessage(msg:any){
+    this.msgFromChild=msg
+  }
 }
