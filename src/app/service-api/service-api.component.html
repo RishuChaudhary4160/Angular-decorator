@@ -1,0 +1,20 @@
+Service Api Integration
+<div>
+    <!-- @for (item of product; track item) {
+    <pre>{{ item.name }}, {{ item.Brand }}</pre>
+    } -->
+    <div>
+        <pre *ngFor="let item of product">{{ item.name }}, {{ item.Brand }}</pre>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr *ngFor="let items of userData | paginate: { itemsPerPage: 10, currentPage: p }">
+            <td>{{items?.firstName}}</td>
+            <td>{{items?.age}}</td>
+        </tr>
+    </table>
+    <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls>
+</div>

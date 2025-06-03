@@ -11,6 +11,7 @@ import { SubjectComponent } from './subject/subject.component';
 import { ParentComponent } from './parent/parent.component';
 import { SubjectOneComponent } from './subject-one/subject-one.component';
 import { SubjectTwoComponent } from './subject-two/subject-two.component';
+import { ServiceApiComponent } from './service-api/service-api.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { SubjectTwoComponent } from './subject-two/subject-two.component';
     SubjectComponent,
     ParentComponent,
     SubjectOneComponent,
-    SubjectTwoComponent
+    SubjectTwoComponent,
+    ServiceApiComponent
   ],
   imports: [
     BrowserModule,
