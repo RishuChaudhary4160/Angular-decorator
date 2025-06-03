@@ -14,6 +14,8 @@ import { SubjectTwoComponent } from './subject-two/subject-two.component';
 import { ServiceApiComponent } from './service-api/service-api.component';
 import { PurePipeComponent } from './pure-pipe/pure-pipe.component';
 import { PurePipe } from './pure-pipe.pipe';
+import { ImpurePipeComponent } from './impure-pipe/impure-pipe.component';
+import { ImppurePipePipe } from './imppure-pipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { PurePipe } from './pure-pipe.pipe';
     SubjectTwoComponent,
     ServiceApiComponent,
     PurePipeComponent,
-    PurePipe
+    PurePipe,
+    ImpurePipeComponent,
+    ImppurePipePipe
   ],
   imports: [
     BrowserModule,
