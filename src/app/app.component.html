@@ -1,10 +1,7 @@
-<h1> Parent Component</h1>
-<input type="text" [(ngModel)]="textInput">
-<app-child [messageFromParent]="textInput"></app-child>
-<br>
-<br>
-<br>
-<br>
-<!-- <h1>Parent Component : Message From Child</h1>
-{{msgFromChild}}
-<app-child (sendMessageEmitter)="receiveChildMessage($event)"></app-child> -->
+<app-parent></app-parent>
+<app-subject></app-subject>
+
+<div>
+    <h2>Observer</h2>
+    <h3 *ngIf="exclusive">Exclusive</h3>
+</div>

@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { ProductService } from './service/product.service';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../service/product.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.css']
 })
-export class AppComponent {
+export class ParentComponent implements OnInit {
   title = 'Project';
   textInput = ''
   msgFromChild = ''

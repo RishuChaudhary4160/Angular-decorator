@@ -6,12 +6,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-@Output() sendMessageEmitter=new EventEmitter()
+  @Output() sendMessageEmitter = new EventEmitter()
   constructor() { }
-@Input() messageFromParent:String | undefined
+  @Input() messageFromParent: String | undefined
   ngOnInit(): void {
   }
-sendToParent(e:any){
-this.sendMessageEmitter.emit(e.target.value)
-}
+  sendToParent(e: any) {
+    this.sendMessageEmitter.emit(e.target.value)
+  }
 }
