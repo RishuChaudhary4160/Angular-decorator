@@ -1,10 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
+import { SubjectOneComponent } from "../subject-one/subject-one.component";
+import { SubjectTwoComponent } from "../subject-two/subject-two.component";
 
 @Component({
   selector: 'app-subject',
   templateUrl: './subject.component.html',
-  styleUrls: ['./subject.component.css']
+  styleUrls: ['./subject.component.css'],
 })
 export class SubjectComponent implements OnInit, OnDestroy {
 
