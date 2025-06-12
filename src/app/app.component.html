@@ -2,8 +2,18 @@
 <app-subject></app-subject>
 <app-service-api></app-service-api>
 <app-pure-pipe></app-pure-pipe> -->
-<div>
-    <h2>DATA</h2>
-    <!-- <h3 *ngIf="exclusive">Exclusive</h3> -->
+
+<div class="sidebar">
+    <h2 class="sidebar-title">DATA</h2>
+    <nav class="sidebar-menu">
+        <a class="sidebar-link" routerLink="/Subject" routerLinkActive="active">Subject</a>
+        <hr class="divider" />
+        <a class="sidebar-link" routerLink="/Decorator" routerLinkActive="active">Decorator</a>
+        <hr class="divider" />
+        <a class="sidebar-link" routerLink="/service" routerLinkActive="active">Service</a>
+        <hr class="divider" />
+        <a class="sidebar-link" routerLink="/pipe" routerLinkActive="active">Pipe</a>
+        <!-- <h3 *ngIf="exclusive">Exclusive</h3> -->
+    </nav>
 </div>
 <router-outlet></router-outlet>
